@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400; /* Regular weight */
+        }
+        h1 {
+            font-weight: 700; /* Bold weight */
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
@@ -9,9 +19,25 @@
 <body>
     <div class="container" >
         <div class="header">
-            <div class="search">searchbar</div>
-            <div class="notifications">Notifications</div>
-            <div class="profile">Hi, profile</div>
+            <div class="search">
+                <label for="searchbar">Lupa</label>
+                <input type="searchbar" 
+                       id="searchbar" 
+                       name="searchbar" 
+                       required>
+              </div>
+            <div class="notifications">
+                <div class="notification">🔔</div>
+                <div class="profilepicmini">📩</div>
+                <div class="namemini">Juanin Juanillo</div>
+            </div>
+            <div class="profile">
+                <div class="profilepic">👤</div>
+                <div class="salute">
+                    <div class="text">Hi there,<br></div>
+                    <div class="profile">Juanin Juanillo (@huan)</div>
+                </div>
+            </div>
             <div class="menu">
                     <button>New</button>
                     <button>Upload</button>
@@ -20,15 +46,17 @@
         </div>
         <div class="sidebar">
             <div class="logo">Dashboard</div>
-            <div class="nav">
+            <div class="nav1">
                 <ul>
                     <li>Home</li>
-                    <li>Profile/li>
+                    <li>Profile</li>
                     <li>Messages</li>
                     <li>History</li>
                     <li>Tasks</li>
                     <li>Communities</li>
                 </ul>
+            </div>
+            <div class="nav2">
                 <ul>
                     <li>Settings</li>
                     <li>Support</li>
@@ -36,39 +64,93 @@
                 </ul>
             </div>
         </div>
-        <div class="main-content">
+        <div class="main-content">        
             <div class="projects">
-                <p>Projects</p>
-                    <div class="project-card">
-                        <h3>Project 1</h3>
-                        <p>Details about project 1...</p>
+                <h3>Your Projects</h3>
+                    <div class="projects-header">
+                        <div class="project-card">
+                                <div class="text">
+                                    <h3>Project 1</h3>
+                                    <p>Details about project 1...Details about project 1...Details about project 1...Details about project 1...Details about project 1...Details about project 1...</p>
+                                </div>
+                                <div class="icons">Icons</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="text">
+                                <h3>Project 2</h3>
+                                <p>Details about project 2...Details about project 2...Details about project 2...Details about project 2...Details about project 2...</p>
+                            </div>
+                            <div class="icons">Icons</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="text">
+                                <h3>Project 3</h3>
+                                <p>Details about project 3...Details about project 3...</p>
+                            </div>
+                            <div class="icons">Icons</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="text">
+                                <h3>Project 4</h3>
+                                <p>Details about project 4...Details about project 4...Details about project 4...Details about project 4...</p>
+                            </div>
+                            <div class="icons">Icons</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="text">
+                                <h3>Project 5</h3>
+                                <p>Details about project 5...Details about project 5...Details about project 5...Details about project 5...Details about project 5...</p>
+                            </div>
+                            <div class="icons">Icons</div>
+                        </div>
+                        <div class="project-card">
+                            <div class="text">
+                                <h3>Project 6</h3>
+                                <p>Details about project 6...Details about project 6...Details about project 6...</p>
+                            </div>
+                            <div class="icons">Icons</div>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <h3>Project 2</h3>
-                        <p>Details about project 2...</p>
+            </div>
+            <div class="news">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcements-card">
+                        <div class="announcements-card1">
+                            <h3>Site Maintenance</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequatur. Dolores doloribus vel distinctio obcaecati, accusamus iusto, dignissimos voluptates asperiores quidem delectus ratione vero dicta sequi alias, excepturi nam dolor!</p></div>
+                        <div class="announcements-card2">
+                            <h3>Community Share Day</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequatur. Dolores doloribus vel distinctio obcaecati, accusamus iusto, dignissimos voluptates asperiores quidem delectus ratione vero dicta sequi alias, excepturi nam dolor!</p></div>
+                        <div class="announcements-card3">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequatur. Dolores doloribus vel distinctio obcaecati, accusamus iusto, dignissimos voluptates asperiores quidem delectus ratione vero dicta sequi alias, excepturi nam dolor!</p></div>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <h3>Project 3</h3>
-                        <p>Details about project 3...</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 4</h3>
-                        <p>Details about project 4...</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 5</h3>
-                        <p>Details about project 5...</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 6</h3>
-                        <p>Details about project 6...</p>
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trending-card">
+                        <div class="trending-card1">
+                            <div class="profile-image1">😋</div>
+                            <div class="profile-name1">@tegan</div>
+                            <div class="profile-text1">World Peace Builder</div>
+                        </div>
+                        <div class="trending-card2">
+                            <div class="profile-image2">😋</div>
+                            <div class="profile-name2">@morgan</div>
+                            <div class="profile-text2">Super Cool Project</div>
+                        </div>
+                        <div class="trending-card3">
+                            <div class="profile-image3">😋</div>
+                            <div class="profile-name3">@alex</div>
+                            <div class="profile-text3">Innovative Tech</div>
+                        </div>
+                        <div class="trending-card4">
+                            <div class="profile-image4">😋</div>
+                            <div class="profile-name4">@jordan</div>
+                            <div class="profile-text4">Creative Design</div>
+                        </div>
                 </div>
-            </div>
-            <div class="announcements">
-                <p>Announcements</p>
-            </div>
-            <div class="trending">
-                <p>Trending</p>
             </div>
         </div>
     </div>
