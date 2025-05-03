@@ -6,7 +6,7 @@
 .container {
     text-align: center;
     display: grid;
-    grid-template-columns: 250px 4fr;
+    grid-template-columns: 2fr 4fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     width: 100vw;
@@ -23,18 +23,20 @@
     text-align: left;
     padding-left: 32px;
     padding-top: 18px;
-    gap: 12px;
     }
-
-  .sidebar .logo {
-    font-size: clamp(16px, 3vh, 20px);
+  .sidebar-content{
+    position: sticky;
+    top: 20px;
+  }
+  .sidebar-content .logo {
+    font-size: clamp(18px, 4vh, 24px);
     font-weight: bold;
     border: 1px solid white;
   }
 
-  .sidebar .nav1, .nav2 {
+  .sidebar-content .nav1, .nav2 {
     color: rgb(255, 255, 255);
-    font-size: clamp(14px, 2vh, 16px);
+    font-size: clamp(16px, 3vh, 18px);
     font-weight: normal;
     margin-top: 15%;
     display: flex;
@@ -47,7 +49,6 @@
   .sidebar .nav1 li, .nav2 li {
     margin: 12px 0;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
   }
 
 .header {
@@ -58,7 +59,9 @@
     grid-template-rows: 1fr 1fr;
     align-items: center;
     box-shadow: #868686 0px 2px 5px;
-    position: relative
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 6px;
   }
   .header .search {
     grid-column: 1;
@@ -67,18 +70,21 @@
     padding: 12px;
     padding-left: 5%;
     gap: 12px;
+    align-items: center;
+    
     
   }
   .header .search input {
     border: none;
     outline: none;
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 14px;
     width: 80%;
     border-radius: 10px;
     gap: 12px;
-    padding: 1px;
+    padding: 3px;
     background-color: #dee4ec;
+    padding-left: 12px;
   }
   .header .notifications {
     color: rgb(0, 0, 0);
@@ -90,7 +96,7 @@
     margin-right: 15%;
     justify-items: space-around;
     gap: 7%;
-    font-size: clamp(12px, 1.8vh, 15px);
+    font-size: 12px;
     font-weight: bold;
     align-items: center;
   }
@@ -106,14 +112,13 @@
   }
 
   .header .profile .salute {
-    font-size: 1.8vh;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
   }
   .header .profile .salute .text {
-    font-size: clamp(12px, 1.8vh, 15px);
+    font-size: 12px;
     font-weight: bold;
     display: flex;
     flex-wrap: nowrap;
@@ -122,7 +127,7 @@
     margin-left: 5%;
   }
   .header .profile .salute .profile {
-    font-size: clamp(16px, 3vh, 20px);
+    font-size: clamp(18px, 4vh, 24px);
     font-weight: bold;
     display: flex;
     flex-wrap: nowrap;
@@ -145,7 +150,7 @@
     width: 90%;
   }
   .header .menu button {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     padding: 7px 20px;
     font-weight: normal;
@@ -164,8 +169,8 @@
     gap: 12px;
     padding: 12px;
     background-color: #bccbde;
-    
   }
+
   .main-content h3{
     font-size: clamp(13px, 1.8vh, 15px);
     color: rgb(0, 0, 0);
@@ -176,6 +181,25 @@
     text-align: left;
     padding: 12px;
   }
+
+  h2 {
+    font-size: clamp(16px, 3vh, 18px);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: clamp(13px, 1.8vh, 15px);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+  }
+
   .main-content .projects .projects-header {
     color: white;
     grid-column: 1;
@@ -185,9 +209,9 @@
     gap: 24px;
     grid-template-rows: 1fr 1fr 1fr;
     padding-top: 12px;
-    padding-bottom: 12px;
-    height: calc(100% - 30px);
+    height: calc(100% - 34px);
   }
+
   .main-content .projects .projects-header .project-card {
     background-color: white;
     color: black;
@@ -199,9 +223,15 @@
     box-shadow: #868686 2px 2px 5px;
     border-radius: 10px;
     border-left: #ebbe2b 12px solid;
-    width: 300px;
-    
+    min-width: 270px;
   }
+
+  .main-content .projects .projects-header .project-card .text {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .main-content .projects .projects-header .project-card .icons {
     display: flex;
     justify-content: right;
@@ -226,36 +256,31 @@
     display: flex;
     flex-direction: column;
     flex-shrink: none;
-    text-overflow: ellipsis;
     flex: 1 1 auto;
     min-width: 300px;
-
   }
+
   .main-content .news .announcements .announcements-card {
     background-color: white;
     color: black;
     gap: 4px;
     padding: 28px;
     border-radius: 10px;
-    overflow: hidden;
     gap: 16px;
     display: flex;
     flex-direction: column;
-    box-shadow: #868686 2px 2px 5px;
-
-    
+    box-shadow: #868686 2px 2px 5px;  
   }
+
   .main-content .news .announcements .announcements-card .announcements-card1,
   .main-content .news .announcements .announcements-card .announcements-card2,
   .main-content .news .announcements .announcements-card .announcements-card3 {
-    gap: 4px;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     align-content: top;
     justify-content: top;
-    height: 10vh;
-    height: 78px;
-
+    height: 82px;
   }
 
   .main-content .news .announcements .announcements-card .announcements-card1,
@@ -264,11 +289,6 @@
     padding-bottom: 16px;
   }
 
-  .main-content .news .announcements .announcements-card h3 {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-  }
   .main-content .news .announcements .announcements-card p {
     font-size: 12px;
     font-weight: normal;
@@ -280,7 +300,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     height: 200px;
-
   }
 
   .main-content .news .trending {
@@ -290,6 +309,7 @@
     display: flex;
     flex-direction: column;
   }
+  
   .main-content .news .trending .trending-card {
     background-color: white;
     color: black;
