@@ -144,6 +144,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 8px;
 }
 
 .header .profile .salute {
@@ -361,6 +362,10 @@ p {
   border-radius: 10px;
   height: 100%;
   box-shadow: #868686 2px 2px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
 }
 .main-content .news .trending .trending-card1,
 .main-content .news .trending .trending-card2,
@@ -368,11 +373,23 @@ p {
 .main-content .news .trending .trending-card4 {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
+}
+.main-content .news .trending .trending-card1 .profile-data1 .profile-name1,
+.main-content .news .trending .trending-card2 .profile-name2,
+.main-content .news .trending .trending-card3 .profile-name3,
+.main-content .news .trending .trending-card4 .profile-name4 {
+  font-weight: bold;
+}
+.main-content .news .trending .trending-card1 .profile-text1,
+.main-content .news .trending .trending-card2 .profile-text2,
+.main-content .news .trending .trending-card3 .profile-text3,
+.main-content .news .trending .trending-card4 .profile-text4 {
+  color: #7c7c7c;
 }
 .main-content .news .trending .trending-card img {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   overflow: hidden;
 }
