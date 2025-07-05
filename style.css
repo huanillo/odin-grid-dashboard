@@ -24,19 +24,28 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  padding-left: 32px;
+
   padding-top: 18px;
+}
+.sidebar img {
+  filter: brightness(0) invert(1);
 }
 
 .sidebar .logo {
+  display: flex;
+  flex-direction: row;;
+  align-items: center;
+  gap: 24px;
   font-size: 1.4em; 
   font-weight: bold;
   margin-bottom: 15px;
+  padding-left: 26px;
 }
 
 .sidebar-content,
 .nav1,
 .nav2 {
+  padding-left: 32px;
   font-size: 1em;
   margin-top: 15%;
   display: flex;
@@ -49,8 +58,10 @@ ul {
 
 .sidebar .nav1 li,
 .sidebar .nav2 li {
+  display: flex;
+  align-items: center;;
+  gap: 24px;
   margin: 12px 0;
-  border-radius: 4px;
 }
 
 .header {
