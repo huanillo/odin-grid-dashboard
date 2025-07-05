@@ -80,12 +80,16 @@ ul {
 .header .search {
   grid-column: 1;
   grid-row: 1;
-  display: flex;
   padding: 12px 0 12px 5%;
   gap: 12px;
   align-items: center;
 }
-
+.header .search label {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+}
 .header .search input {
   border: none;
   outline: none;
@@ -110,6 +114,15 @@ ul {
   font-size: 16px;
   font-weight: bold;
 }
+.header .notifications .profilepicmini {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .header .profile {
   color: #000;
@@ -121,6 +134,16 @@ ul {
   gap: 12px;
   justify-content: flex-start;
   font-size: 1em;
+}
+
+.header .profile .profilepic {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .profile .salute {
@@ -261,6 +284,7 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 24px;
 }
 
 /* News section */
@@ -338,7 +362,20 @@ p {
   height: 100%;
   box-shadow: #868686 2px 2px 5px;
 }
-
+.main-content .news .trending .trending-card1,
+.main-content .news .trending .trending-card2,
+.main-content .news .trending .trending-card3,
+.main-content .news .trending .trending-card4 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.main-content .news .trending .trending-card img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 .main-content .news > h3 {
   font-size: clamp(18px, 2.5vh, 22px);
 }
